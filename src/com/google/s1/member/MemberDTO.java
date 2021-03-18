@@ -10,8 +10,7 @@ public class MemberDTO {
 	private String pw;
 	private String name;
 	private String email;
-	private String mobile;
-	
+	private String phone;
 	
 	public String getId() {
 		return id;
@@ -37,11 +36,11 @@ public class MemberDTO {
 	public void setEmail(String email) {
 		this.email = email;
 	}
-	public String getMobile() {
-		return mobile;
+	public String getPhone() {
+		return phone;
 	}
-	public void setMobile(String mobile) {
-		this.mobile = mobile;
+	public void setPhone(String phone) {
+		this.phone = phone;
 	}
-
+	
 }

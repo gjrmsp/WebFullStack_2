@@ -9,11 +9,14 @@ public class MemberDAOTest {
 		//Web 에서 메인 메서드는 테스트 용도로만 사용
 		MemberDAO memberDAO = new MemberDAO();
 		MemberDTO memberDTO = new MemberDTO();
-		memberDTO.setId("iu111");
-		memberDTO.setPw("pw1222");
+		memberDTO.setId("id3");
+		memberDTO.setPw("pw3");
+		memberDTO.setName("iu");
+		memberDTO.setPhone("01033333333");
+		memberDTO.setEmail("id3@naver.com");
 		
 		try {
-			memberDTO = memberDAO.login(memberDTO);			
+			int result = memberDAO.memberJoin(memberDTO);
 			System.out.println(memberDTO != null);
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
