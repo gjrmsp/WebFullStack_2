@@ -18,17 +18,7 @@
 	
 	<servlet-mapping>
 		<servlet-name>member</servlet-name>
-		<url-pattern>/member/*</url-pattern>
+		<url-pattern>/member/memberLogin.do</url-pattern>
 	</servlet-mapping>
 
-	<servlet>
-		<servlet-name>bankbook</servlet-name>
-		<servlet-class>com.google.s1.bankbook.BankBookController</servlet-class>
-	</servlet>
-	
-	<servlet-mapping>
-		<servlet-name>bankbook</servlet-name>
-		<url-pattern>/bankbook/*</url-pattern>
-	</servlet-mapping>
-	
 </web-app>
