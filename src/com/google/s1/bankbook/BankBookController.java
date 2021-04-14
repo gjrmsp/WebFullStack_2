@@ -47,8 +47,10 @@ public class BankBookController extends HttpServlet {
 		//  /WebFullStack_2/bankbook/bankbookList.do
 		String uri = request.getRequestURI();
 		System.out.println(uri);
+
 		int index = uri.lastIndexOf("/");
 		uri = uri.substring(index+1);//   bankbookList.do
+		System.out.println(uri);
 		
 		ActionForward actionForward = null;
 		
